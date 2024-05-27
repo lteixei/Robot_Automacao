@@ -1,28 +1,49 @@
-# Estrutura base de automação de testes com Robot Framework
+# Um Projeto de Automação de Teste de API em Robot Framework
+> Projeto para ajudar os novatos a criar um portfolio 
 
-Robot Framework é uma estrutura de automação genérica open source, ou seja, de código aberto que pode ser usado para testar e automatizar processos de software.
-O Robot Framework pode ser implementado em várias linguagens diferentes, como Python, Java, entre outras. Ele é aberto e extensível – pode ser integrado virtualmente a qualquer outra ferramenta para criar soluções de automação poderosas e flexíveis.
+## Versioning/Versionamento
+> Esse projeto não possui um sistema de versionamento.
 
-### ---- Pré-Requisitos Robot Framework ----
-- Sistema Operacional Windows
-- Download da Linguagem Python (https://www.python.org/downloads/)
-- Marcar opção de instalar o PIP durante instalação do Python
-- python --version
-- pip --version
-- Download do Robot Framework via linha de comando no terminal: pip install robotframework
-- robot --version
-- Download do Selenium Library: pip install robotframework-seleniumlibrary
-- Download do Geckodriver: https://github.com/mozilla/geckodriver/releases
-- Download do chrome driver (https://chromedriver.chromium.org/downloads)
-- Salvar ambos os arquivos executáveis (geckodriver e chrome driver), dentro da pasta scripts onde foi instalado o Python na sua máquina.
-<br/>
+## History/Histórico
+> Esse é o primeiro release
 
-#### **Bibliotecas do Robot**:
-- Selenium Library
-- Appium Library
-- Desktop Library (Zoomba)
-<br/>
+## License/Licença do Projeto
+© [Conie Menezes](http://coniemenezes.com/)
 
-# Execução dos testes:
+## Getting started
+> Para tornar mais fácil para você começar a usar o seu GitHub, aqui está uma lista das próximas etapas recomendadas.
 
-- Pela IDE ou pela linha de comando executando na raiz do projeto o comando: 
+## Add your files
+```
+cd existing_repo
+git remote add origin https://github.com/coniemenezes/teste-automatizado-em-robotframework.git
+git branch -M main
+git push -uf origin main
+```
+
+## Já é um profissional? Basta editar este README.md e torná-lo seu. 
+
+## Configuração do projeto
+>Robot framework é construído com Python, portanto, é necessário que tenhas a última versão desta tecnologia instalada em sua máquina e pode ser encontrado através na página oficial do Python.
+
+## A instalação do framework e suas bibliotecas auxiliares é feita através do pip, gerenciador de bibliotecas nativo do Python. Proceda com o comando abaixo:
+```
+$ pip install robotframework
+```
+>E verifique se a instalação ocorreu corretamente:
+```
+$ robot --version
+```
+## A seguir, proceda com a instalação das bibliotecas abaixo, através do pip:
+```
+RequestsLibrary
+Robotframework-jsonlibrary
+```
+## Execução do projeto
+>Para executar os scripts, execute o comando abaixo via terminal estando dentro do diretório raiz do projeto, e passando como argumentos o diretório onde serão inseridos os relatórios e logs da execução e o diretório onde encontram-se os scripts de teste.
+```
+$ robot -d ./Reports  tests/
+```
+## Padrões de projeto e boas práticas
+>Para trabalhar em um projeto com Robot Framework é fortemente recomendado que o programador leia constantemente sua documentação, e esteja atento aos padrões de projeto do Python, tecnologia utilizada para implementação do framework.
+>Lembre-se sempre que o objetivo desta abordagem é construir scripts simples e legíveis. Toda complexidade adicionada ao projeto deve possuir um motivo forte e clara para existir.
