@@ -27,13 +27,20 @@ Novo Usuário na Livraria da Travessa
     [Setup]    Open Browser    ${URL}    chrome
     Busca No Site
     [Teardown]    Close Browser
-    
+
 *** Keywords ***
 Busca No Site
     Input Text       xpath=/html/body/form/div[3]/nav/ul/input    Contos Eróticos
     Click Element    xpath=//*[@id="ucCabecalho_menu"]/ul/a[1]
+    
+    # Aumentar o tempo de espera
     Wait Until Element Is Visible    xpath=/html/body/form/div[5]/div[1]/div/div[2]/section[1]/div/div/div[2]/div/div/button    timeout=10
-    Wait Until Element Is Not Visible    xpath=//*[@class="fa fa-whatsapp my-float"]    timeout=10
-    Click Element     xpath=/html/body/form/div[5]/div[1]/div/div[2]/section[1]/div/div/div[2]/div/div/button
+    
+    # Tentar esconder o ícone do WhatsApp se ainda estiver visível
+    Execute JavaScript    if (document.querySelector('.fa.fa-whatsapp.my-float')) { document.querySelector('.fa.fa-whatsapp.my-float').style.display='none'; }
+    
+    # Clicar no botão de comprar usando JavaScript
+    Execute JavaScript    arguments[0].click();    xpath=/html/body/form/div[5]/div[1]/div/div[2]/section[1]/div/div/div[2]/div/div/button
+    
     Wait Until Element Is Visible    xpath=//*[@id="form1"]/div[4]/a    timeout=10
     Click Element     xpath=//*[@id="form1"]/div[4]/a
