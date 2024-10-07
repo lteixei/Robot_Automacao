@@ -28,7 +28,7 @@ Novo Usuário na Livraria da Travessa
     [Setup]    Open Browser    ${URL}    chrome
     Busca No Site
     [Teardown]    Close Browser
-    
+
 *** Keywords ***
 Busca No Site
     Input Text       xpath=/html/body/form/div[3]/nav/ul/input    Contos Eróticos
