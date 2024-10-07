@@ -36,11 +36,11 @@ Busca No Site
     # Aumentar o tempo de espera
     Wait Until Element Is Visible    xpath=/html/body/form/div[5]/div[1]/div/div[2]/section[1]/div/div/div[2]/div/div/button    timeout=10
     
-    # Tentar esconder o ícone do WhatsApp se ainda estiver visível
-    Execute JavaScript    if (document.querySelector('.fa.fa-whatsapp.my-float')) { document.querySelector('.fa.fa-whatsapp.my-float').style.display='none'; }
+    # Tentar esconder o ícone do WhatsApp
+    Execute JavaScript    var element = document.querySelector('.fa.fa-whatsapp.my-float'); if (element) { element.style.display = 'none'; }
     
-    # Clicar no botão de comprar usando JavaScript
-    Execute JavaScript    arguments[0].click();    xpath=/html/body/form/div[5]/div[1]/div/div[2]/section[1]/div/div/div[2]/div/div/button
+    # Clicar no botão de comprar
+    Click Element    xpath=/html/body/form/div[5]/div[1]/div/div[2]/section[1]/div/div/div[2]/div/div/button
     
     Wait Until Element Is Visible    xpath=//*[@id="form1"]/div[4]/a    timeout=10
     Click Element     xpath=//*[@id="form1"]/div[4]/a
