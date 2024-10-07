@@ -8,10 +8,13 @@ ${PASSWORD}           123456
 
 *** Test Cases ***
 Adicionar Apparel E Shoes No Carrinho E Na Lista
-    [Setup]    Open Browser    ${URL}    chrome
+    Open Browser    https://demowebshop.tricentis.com/    chrome
     Sleep    2s
     Capture Page Screenshot
-    Wait Until Element Is Visible    .ico-login    timeout=10
+    Wait Until Page Contains Element    .ico-login    timeout=10
+    Click Element    .ico-login
+    # Continue com o restante do seu teste...
+
     Login
     Adicionar Produtos
     Limpar Carrinho
