@@ -1,7 +1,10 @@
 *** Settings ***
-Documentation    Testes Calculadora com Zoomba
-Resource    base.robot
-Resource    calculadora.robot
+Library    ApplicationLibrary
+Library    Zoomba.APILibrary
+Library    Zoomba.GUILibrary
+Library    Zoomba.SOAPLibrary
+Resource    ../page_objects/zoomba_desktop/base.robot
+Resource    ../page_objects/zoomba_desktop/calculadora.robot
 
 Suite Setup     Start Calculadora   
 Test Setup      Run Keywords

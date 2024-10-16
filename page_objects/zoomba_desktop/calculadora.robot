@@ -1,5 +1,8 @@
 *** Settings ***
-Documentation       Page object calculadora desktop
+Library             Zoomba.DesktopLibrary
+Library             ScreenCapLibrary   quality=100
+Library             OperatingSystem
+Documentation           Zoomba Desktop Library Tests    Page object calculadora desktop
 
 *** Variables ***
 ${BTN_0}     accessibility_id=num0Button
