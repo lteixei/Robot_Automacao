@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 
-*** Variable ***
+*** Variables ***
 ${BROWSER}              firefox
 ${URL}                  https://robotizandotestes.blogspot.com.br/  
 ${CABEÇALHO}            Header1

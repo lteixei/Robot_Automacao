@@ -2,6 +2,7 @@
 Library     Zoomba.DesktopLibrary
 Library     ScreenCapLibrary   quality=100
 Library     OperatingSystem
+Library    ApplicationLibrary
 Documentation       Base da automação desktop usando Zoomba
 
 *** Variables ***

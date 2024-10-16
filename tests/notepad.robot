@@ -3,6 +3,7 @@ Documentation    Testes Notepad com Zoomba
 Resource    ../page_objects/zoomba_desktop/base.robot
 Resource    ../page_objects/zoomba_desktop/notepad.robot
 
+Library         Zoomba.DesktopLibrary
 Suite Setup     Start Notepad
 Test Setup      Run Keywords
 ...             Launch Application
