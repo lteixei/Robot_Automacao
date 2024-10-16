@@ -12,4 +12,4 @@ Cenário 01: Pesquisar postagem Season Premiere
 Cenário 02: Ler postagem Season Premiere
     Dado que esteja na tela de resultado da pesquisa pela postagem "Season Running - Ep. 08: Executando seus testes no Docker"
     Quando clicar no link da postagem
-    Então a tela da postagem "Season Premiere: Introdução ao Robot Framework" deve ser mostrada
+    Então a tela da postagem "Season Running - Ep. 08: Executando seus testes no Docker" deve ser mostrada
