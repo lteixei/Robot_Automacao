@@ -30,5 +30,8 @@
   "license": "MIT",
   "dependencies": {
     "webdriverio": "^7.14.1"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.32.0"
   }
 }
