@@ -30,4 +30,4 @@ Editar transação
 Excluir transação
     Acessar página de extratos
     Excluir transação pela descrição       Movimentacao para exclusao
-    Valida a quantidade de transacoes na página     6
+    Valida a quantidade de transacoes na página     5
