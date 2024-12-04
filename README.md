@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/ecbb6689-4611-42b8-a631-c67a9963f5eb)
+
 # Robot Framework
 Conteúdo básico do curso (Udemy) + testes adicionais.
 * Nome do Curso: Testes Automatizados Usando Robot Framework – Módulo 1
