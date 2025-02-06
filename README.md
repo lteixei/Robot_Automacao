@@ -1,6 +1,4 @@
-![image](https://github.com/user-attachments/assets/ecbb6689-4611-42b8-a631-c67a9963f5eb)
-
-# Automatizando Testes com Robot Framework
+# Robot Framework
 Conteúdo básico do curso (Udemy) + testes adicionais.
 * Nome do Curso: Testes Automatizados Usando Robot Framework – Módulo 1
 
@@ -50,44 +48,10 @@ Por favor, instale usando o comando via terminal.
 
 <br/>
 
-#### **Página e APP usados durante os testes**:
-- website: https://barrigareact.wcaquino.me
-- app: CTAppium_1_0 (disponível na pasta resources)
-
 #### **Bibliotecas do Robot**:
 - Selenium Library
 - Appium Library
 - Desktop Library (Zoomba)
-
-<br/>
-
-### ---- Lista de Testes com Selenium ----
-<br/>
-
-- Criar uma conta
-- Login inválido **(esquema de cenário)**
-- CRUD de movimentações/transações
-
-<br/>
-
-### ---- Lista de Testes com Appium ----
-<br/>
-
-- Interação com abas, alertas, accordion, cliques longo e normal, scroll (up, down, left, right), swipe de elementos, formulário.
-- Exemplo usando e2e usando uma aplicação nativa (a apk está na pasta resources - ctAppium)
-- Exemplo acessando aplicação híbrida (troca de contexto para webview)
-- Obs: Talvez precise atualizar a versão do chromedrive de acordo com a versão do seu navegador no device simulado
-- ~~Drag and Drop, não funcionou~~ :pensive:
-<br/>
-<br/>
-
-### ---- Lista de Testes com Desktop ----
-<br/>
-
-- Operações na calculadora do Windows
-- Escrever no bloco de notas
-<br/>
-<br/>
 
 ### ---- Diferenciais no projeto ----
 <br/>

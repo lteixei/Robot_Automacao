@@ -1,0 +1,14 @@
+*** Settings ***
+Library                    Selenium2Library
+Library                    FakerLibrary
+Library                    DatabaseLibrary
+Library                    String
+Library                    Screenshot
+Library                    Collections
+Library                    DateTime\par
+Library                    ../Funcs/ponteiro.py
+Library                    ../Funcs/scrollLivre.py                 
+#---------------------------\par
+#Resource                   ../Shared/keywords.robot
+#Resource                   ../Shared/Db/dbNiveisDeAcesso.robot
+Resource                   ../../Variaveis/locais.robot

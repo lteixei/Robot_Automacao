@@ -1,0 +1,23 @@
+*** Variables ***
+
+
+######------------TITULO DO TESTE------------######
+# MENU
+$\{MENU_MANUT_LOT_FISICA\}                              xpath=//*[@id="menuForm:_id50"]
+
+# NOME
+$\{NM_XPATH_MANUT_LOT_FISICA\}                          xpath=//*[@id="menuForm:_id50"]
+$\{NM_MANUT_LOT_LOCALIDADES\}                           Localidades
+$\{NM_XPATH_MANUT_LOT_LOCALIDADES\}                     xpath=//*[@id="menuForm:_id50"]
+
+# CAMPO
+$\{CLICK_CAMPO_COD_UNID_MANUT_LOT_FISICA\}              xpath=//*[@id="menuForm:_id50"]
+$\{CAMPO_COD_UNID_MANUT_LOT_FISICA\}                    xpath=//*[@id="menuForm:_id50"]
+$\{xpath_REG_GRAV_SUC\}                                 xpath=//*[@id="menuForm:_id50"]
+$\{MSG_REG_GRAV_SUC\}                                   Registro gravado com sucesso!
+
+# BOTAO
+$\{BTN_PESQUISAR_MANUT_LOT_FISICA\}                     xpath=//*[@id="menuForm:_id50"]
+$\{BTN_GRAVAR_MANUT_LOT_FISICA\}                        xpath=//*[@id="menuForm:_id50"]
+$\{BTN_FINALIZAR_MANUT_LOT_FISICA\}                     xpath=//*[@id="menuForm:_id50"]
+$\{BTN_CANCELAR_MANUT_LOT_FISICA\}                      xpath=//*[@id="menuForm:_id50"]
